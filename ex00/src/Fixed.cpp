@@ -1,7 +1,7 @@
 #include "Fixed.hpp"
 #include <iostream>
 
-int  Fixed::mFrac = 0;
+int  Fixed::mFrac = 8;
 
 Fixed::Fixed(int fix)
   :mFix(fix)

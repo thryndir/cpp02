@@ -107,28 +107,24 @@ bool  Fixed::operator!=(const Fixed& fixed) const
   return (this->mFix != fixed.mFix ? true : false);
 }
 
-Fixed&  Fixed::operator+(const Fixed& fixed)
+Fixed  Fixed::operator+(const Fixed& fixed)
 {
-  this->mFix = this->toFloat() + fixed.toFloat();
-  return (*this);
+  return (float(this->toFloat() + fixed.toFloat()));
 }
 
-Fixed&  Fixed::operator-(const Fixed& fixed)
+Fixed  Fixed::operator-(const Fixed& fixed)
 {
-  this->mFix = this->toFloat() - fixed.toFloat();
-  return (*this);
+  return (float(this->toFloat() - fixed.toFloat()));
 }
 
-Fixed&  Fixed::operator*(const Fixed& fixed)
+Fixed  Fixed::operator*(const Fixed& fixed)
 {
-  this->mFix = float(this->toFloat() * fixed.toFloat());
-  return (*this);
+  return (float(this->toFloat() * fixed.toFloat()));
 }
 
-Fixed&  Fixed::operator/(const Fixed& fixed)
+Fixed  Fixed::operator/(const Fixed& fixed)
 {
-  this->mFix = this->toFloat() / fixed.toFloat();
-  return (*this);
+  return (float(this->toFloat() / fixed.toFloat()));
 }
 
 Fixed&  Fixed::operator++()

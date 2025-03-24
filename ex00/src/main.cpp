@@ -1,14 +1,10 @@
-#include "Fixed.hpp"
-#include <iostream>
+#include "ClapTrap.hpp"
 
 int main(void)
 {
-  Fixed a;
-  Fixed b( a );
-  Fixed c;
-  c = b;
-  std::cout << a.getRawBits() << std::endl;
-  std::cout << b.getRawBits() << std::endl;
-  std::cout << c.getRawBits() << std::endl;
+  ClapTrap test("test");
+  test.attack("test");
+  test.beRepaired(8);
+  test.takeDamage(10);
   return 0;
 }

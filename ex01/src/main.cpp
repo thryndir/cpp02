@@ -1,19 +1,17 @@
-#include "Fixed.hpp"
-#include <iostream>
+#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-int main( void ) {
-  Fixed a;
-  Fixed const b( 10 );
-  Fixed const c( 42.42f );
-  Fixed const d( b );
-  a = Fixed( 1234.4321f );
-  std::cout << "a is " << a << std::endl;
-  std::cout << "b is " << b << std::endl;
-  std::cout << "c is " << c << std::endl;
-  std::cout << "d is " << d << std::endl;
-  std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-  std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-  std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-  std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+int main()
+{
+  ScavTrap test0("thryndir");
+  ScavTrap test1("Roboto");
+  test0.guardGate();
+  test0.attack(test1.getName());
+  test1.takeDamage(10);
+  ScavTrap test2(test1);
+  test2.attack(test0.getName());
+  test0.takeDamage(30);
+  test2 = test0;
+  ClapTrap test3(test0);
   return 0;
 }

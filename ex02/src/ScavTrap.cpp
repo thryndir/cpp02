@@ -36,13 +36,3 @@ void  ScavTrap::guardGate()
 {
   std::cout << "(ScavTrap) " << getName() << " is now in gatekeeper mode\n";
 }
-
-void  ScavTrap::attack(const std::string& target)
-{
-  if (getEpoints() && getHpoints())
-  {
-    std::cout << "(ScavTrap) " << getName() << " attacks " <<
-      target << " causing " << getAdamage() << " points of damage !" << '\n';
-    setEpoints(getEpoints()-1);
-  }
-}

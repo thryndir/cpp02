@@ -7,7 +7,7 @@ ClapTrap::ClapTrap(const std::string& name)
   ,mEnergyPoints(0)
   ,mAttackDamage(0)
 {
-  std::cout << "Hi this is the construcor\n";
+  std::cout << "(ClapTrap) construcor called\n";
 }
 
 ClapTrap::ClapTrap(const ClapTrap& clapTrap)
@@ -16,11 +16,14 @@ ClapTrap::ClapTrap(const ClapTrap& clapTrap)
   ,mEnergyPoints(clapTrap.mEnergyPoints)
   ,mAttackDamage(clapTrap.mAttackDamage)
 {
-  std::cout << "Hi this is the copy constructor\n";
+  std::cout << "(ClapTrap) copy constructor called\n";
 }
 
 ClapTrap&  ClapTrap::operator=(const ClapTrap& clapTrap)
 {
+  std::cout << "(ClapTrap) copy assignement operator called \n";
+  if (this == &clapTrap)
+    return (*this);
   mName = clapTrap.mName;
   mHitPoints = clapTrap.mHitPoints;
   mEnergyPoints = clapTrap.mEnergyPoints;
@@ -35,11 +38,9 @@ ClapTrap::~ClapTrap()
 
 void  ClapTrap::attack(const std::string& target)
 {
-  if (mEnergyPoints > 0)
+  if (mEnergyPoints && mHitPoints)
     std::cout << "ClapTrap " << mName << " attacks " <<
       target << " causing " << mAttackDamage << " points of damage !" << '\n';
-  else
-    std::cout << mName << " has not enought point to engage an attack\n";
 }
 
 void  ClapTrap::takeDamage(unsigned int amount)
@@ -50,9 +51,7 @@ void  ClapTrap::takeDamage(unsigned int amount)
 
 void  ClapTrap::beRepaired(unsigned int amount)
 {
-  if (mEnergyPoints > 0)
+  if (mEnergyPoints && mHitPoints)
     std::cout << "ClapTrap " << mName << " is being repaired by " <<
       amount << " points !" << '\n';
-  else
-    std::cout << mName << " has not enough point to repair himself\n";
 }

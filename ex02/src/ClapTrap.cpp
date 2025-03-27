@@ -40,7 +40,7 @@ void  ClapTrap::attack(const std::string& target)
 {
   if (mEnergyPoints && mHitPoints)
   {
-    std::cout << "(ClapTrap) " << mName << " attacks " <<
+    std::cout << mName << " attacks " <<
       target << " causing " << mAttackDamage << " points of damage !" << '\n';
     setEpoints(getEpoints()-1);
   }

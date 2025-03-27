@@ -13,5 +13,6 @@ int main()
   test0.takeDamage(30);
   test2 = test0;
   ClapTrap test3(test0);
+  test3.attack(test0.getName());
   return 0;
 }

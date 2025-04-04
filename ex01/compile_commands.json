@@ -12,9 +12,9 @@
       "obj/main.o",
       "src/main.cpp"
     ],
-    "directory": "/home/lgalloux/Documents/cpp03/ex01",
-    "file": "/home/lgalloux/Documents/cpp03/ex01/src/main.cpp",
-    "output": "/home/lgalloux/Documents/cpp03/ex01/obj/main.o"
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/main.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/main.o"
   },
   {
     "arguments": [
@@ -26,12 +26,12 @@
       "-Iinclude",
       "-c",
       "-o",
-      "obj/ClapTrap.o",
-      "src/ClapTrap.cpp"
+      "obj/Cat.o",
+      "src/Cat.cpp"
     ],
-    "directory": "/home/lgalloux/Documents/cpp03/ex01",
-    "file": "/home/lgalloux/Documents/cpp03/ex01/src/ClapTrap.cpp",
-    "output": "/home/lgalloux/Documents/cpp03/ex01/obj/ClapTrap.o"
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/Cat.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/Cat.o"
   },
   {
     "arguments": [
@@ -43,11 +43,79 @@
       "-Iinclude",
       "-c",
       "-o",
-      "obj/ScavTrap.o",
-      "src/ScavTrap.cpp"
+      "obj/Dog.o",
+      "src/Dog.cpp"
     ],
-    "directory": "/home/lgalloux/Documents/cpp03/ex01",
-    "file": "/home/lgalloux/Documents/cpp03/ex01/src/ScavTrap.cpp",
-    "output": "/home/lgalloux/Documents/cpp03/ex01/obj/ScavTrap.o"
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/Dog.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/Dog.o"
+  },
+  {
+    "arguments": [
+      "/home/lgalloux/.nix-profile/bin/c++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-std=c++98",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "obj/Animal.o",
+      "src/Animal.cpp"
+    ],
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/Animal.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/Animal.o"
+  },
+  {
+    "arguments": [
+      "/home/lgalloux/.nix-profile/bin/c++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-std=c++98",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "obj/WrongAnimal.o",
+      "src/WrongAnimal.cpp"
+    ],
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/WrongAnimal.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/WrongAnimal.o"
+  },
+  {
+    "arguments": [
+      "/home/lgalloux/.nix-profile/bin/c++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-std=c++98",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "obj/WrongCat.o",
+      "src/WrongCat.cpp"
+    ],
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/WrongCat.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/WrongCat.o"
+  },
+  {
+    "arguments": [
+      "/home/lgalloux/.nix-profile/bin/c++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-std=c++98",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "obj/Brain.o",
+      "src/Brain.cpp"
+    ],
+    "directory": "/home/lgalloux/Documents/cpp04/ex01",
+    "file": "/home/lgalloux/Documents/cpp04/ex01/src/Brain.cpp",
+    "output": "/home/lgalloux/Documents/cpp04/ex01/obj/Brain.o"
   }
 ]

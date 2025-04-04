@@ -4,7 +4,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 CPPFLAGS := -Iinclude
 SRC_DIR := src
 OBJ_DIR := obj
-SRCS := main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS := main.cpp Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp \
+Brain.cpp
 OBJS := $(SRCS:.cpp=.o)
 VPATH := $(SRC_DIR):$(OBJ_DIR)
 OUTPUT_OPTION = -o $(OBJ_DIR)/$@
